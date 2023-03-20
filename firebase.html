@@ -9,6 +9,16 @@
 <h1>Retrieving High Score From Firebase</h1>
 
 High Score:
+  <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+  <script type="module">
+    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js'
 
+    // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
+    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js'
+
+    // Add Firebase products that you want to use
+    import { getAuth } from 'https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js'
+    import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.js'
+  </script>
     </body>
 </html>
