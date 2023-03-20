@@ -22,12 +22,12 @@ High Score:
         messagingSenderId: "648539782615",
         appId: "1:648539782615:web:f9f281f327150657cb9f92",
          measurementId: "G-E0216S6MD6"
-};
+        };
        
-        firebase.initializeApp(config);
+       firebase.initializeApp(config);
        var highScore;
        firebase.database().ref('highScore').get(highScore);
        console.log(highScore);
-        }, 
+        </script>
     </body>
 </html>
