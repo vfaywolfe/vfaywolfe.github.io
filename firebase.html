@@ -11,7 +11,7 @@
 High Score:
    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
    <script>
-       console.log("one");
+       document.write("one");
        //Add config info from your Firbase Project
        const firebaseConfig = {
         apiKey: "AIzaSyAVxzapfx2RyxF0TcL8P_1wFmrk1lAuZVI",
@@ -25,11 +25,11 @@ High Score:
         };
        
        firebase.initializeApp(config);
-       console.log ("two");
+       document.write ("two");
        var highScore;
        firebase.database().ref('highScore').get(highScore);
-       console.log(highScore);
-       console.log("three");
+       document.write(highScore);
+       document.write("three");
         </script>
         <br>four
     </body>
