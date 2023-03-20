@@ -10,15 +10,24 @@
 
 High Score:
   <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
-  <script type="module">
-    import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js'
-
-    // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
-    import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.18.0/firebase-analytics.js'
-
-    // Add Firebase products that you want to use
-    import { getAuth } from 'https://www.gstatic.com/firebasejs/9.18.0/firebase-auth.js'
-    import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.18.0/firebase-firestore.js'
-  </script>
+        <script src="https://www/gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+   <script>
+       //Add config info from your Firbase Project
+       const firebaseConfig = {
+        apiKey: "AIzaSyAVxzapfx2RyxF0TcL8P_1wFmrk1lAuZVI",
+         authDomain: "loginapp-e1cf8.firebaseapp.com",
+         databaseURL: "https://loginapp-e1cf8-default-rtdb.firebaseio.com",
+        projectId: "loginapp-e1cf8",
+        storageBucket: "loginapp-e1cf8.appspot.com",
+        messagingSenderId: "648539782615",
+        appId: "1:648539782615:web:f9f281f327150657cb9f92",
+         measurementId: "G-E0216S6MD6"
+};
+       
+        firebase.initializeApp(config);
+       var highScore;
+       firebase.database().ref('highScore').get(highScore);
+       console.log(highScore);
+        }, 
     </body>
 </html>
