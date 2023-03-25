@@ -38,10 +38,12 @@
 
   const db = getDatabase();
   const dbref = ref(db);
-
+document.write("One");
   get(child(dbref, "highScore")).then((snapshot)=>{
                 if(snapshot.exists()){document.write(snapshot.val());}
+      document.write("One");
       </script>
+    
 </body>
 </html>
 
